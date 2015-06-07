@@ -11,7 +11,7 @@ Examples:
 ``echo -n thf >> /proc/rtkit``
 ``./rtcmd.py hp1337``
 
-To gain root you should give "My Pen Is Long" command (popculture reference, without spaces, small letters) and then fork some shell from writing process. rtcmd.py does that for you if second parameter is specified.
+To gain root you should give "shiboleet" command (popculture reference, without spaces, small letters) and then fork some shell from writing process. rtcmd.py does that for you if second parameter is specified.
 ``tools/rtcmd.py mypenislong /bin/bash``
 
 ##Notes

